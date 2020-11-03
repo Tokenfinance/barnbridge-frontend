@@ -1,0 +1,76 @@
+{
+  "name": "barnbridge-frontend",
+  "author": "BarnBridge",
+  "license": "Apache-2",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "build": "GENERATE_SOURCEMAP=false node ./scripts/build-non-split.js",
+    "start": "react-scripts start",
+    "lessc": "lessc src/antd.less src/antd.css -js",
+    "import:abi": "node tools/import_abi.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@animated-burgers/burger-squeeze": "1.1.2",
+    "@ethersproject/providers": "5.0.12",
+    "@web3-react/authereum-connector": "6.1.6",
+    "@web3-react/core": "6.1.1",
+    "@web3-react/fortmatic-connector": "6.1.6",
+    "@web3-react/injected-connector": "6.0.7",
+    "@web3-react/ledger-connector": "6.1.1",
+    "@web3-react/portis-connector": "6.1.6",
+    "@web3-react/squarelink-connector": "6.1.6",
+    "@web3-react/torus-connector": "6.1.7",
+    "@web3-react/trezor-connector": "6.1.6",
+    "@web3-react/walletconnect-connector": "6.1.6",
+    "@web3-react/walletlink-connector": "6.1.6",
+    "antd": "4.7.0",
+    "apollo-boost": "0.4.9",
+    "bignumber.js": "9.0.1",
+    "classnames": "2.2.6",
+    "date-fns": "2.16.1",
+    "graphql": "15.3.0",
+    "identicon.js": "2.3.3",
+    "lodash": "4.17.20",
+    "react": "16.14.0",
+    "react-apollo": "3.1.5",
+    "react-device-detect": "1.14.0",
+    "react-dom": "16.14.0",
+    "react-router-dom": "5.2.0",
+    "react-use-storage": "^0.4.3",
+    "recharts": "1.8.5",
+    "rewire": "5.0.0",
+    "web3": "1.3.0",
+    "web3-eth-contract": "1.3.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "2.2.10",
+    "@types/identicon.js": "2.3.0",
+    "@types/lodash": "4.14.162",
+    "@types/react": "16.9.52",
+    "@types/react-dom": "16.9.8",
+    "@types/react-router-dom": "5.1.6",
+    "@types/recharts": "1.8.16",
+    "axios": "0.20.0",
+    "dotenv": "8.2.0",
+    "husky": "4.3.0",
+    "lessc": "1.0.2",
+    "react-scripts": "3.4.3",
+    "typescript": "4.0.3"
+  }
+}
